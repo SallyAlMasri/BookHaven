@@ -5,7 +5,7 @@ import { auth, db, facebookProvider, googleProvider } from '../firebase';
 import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { collection, addDoc } from "firebase/firestore";
 
-export default function signUp() {
+export default function SignUp() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

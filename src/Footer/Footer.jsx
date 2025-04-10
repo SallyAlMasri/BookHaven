@@ -3,7 +3,7 @@ import './Footer.css';
 import {useNavigate } from 'react-router-dom';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaSun, FaMoon } from 'react-icons/fa';
 
-const footer = ({ darkMode, toggleDarkMode }) => {
+const Footer = ({ darkMode, toggleDarkMode }) => {
   const navigate = useNavigate();
   return (
     <footer className={`footer ${darkMode ? 'dark-mode' : ''}`}>
@@ -42,4 +42,4 @@ const footer = ({ darkMode, toggleDarkMode }) => {
   );
 };
 
-export default footer;
+export default Footer;

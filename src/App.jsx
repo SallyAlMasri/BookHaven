@@ -2,11 +2,11 @@ import BookPage from './BookPages/BookPage';
 import BookDetails from './BookPages/BookDetails';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import login from './Login/Login';
-import signUp from './SignUp/Signup';
-import about from './About/About';
+import Login from './Login/Login';
+import SignUp from './SignUp/Signup';
+import About from './About/About';
 import Home from './Home/Home';
-import footer from './Footer/Footer';
+import Footer from './Footer/Footer';
 import UserProfile from './UserProfile/UserProfile';
 import BookChat from './BookLoverChat/BookLoverChat';
 import { auth, signOut, db } from './firebase';
@@ -226,14 +226,14 @@ export default function App() {
 
       <div className={`main-content ${darkMode ? 'bg-dark text-light' : 'bg-light text-dark'}`}>
         <Routes>
-          <Route path="/SignUp" element={<signUp />} />
-          <Route path="/login" element={<login />} />
-          <Route path="/about" element={<about darkMode={darkMode} />} />
-          <Route path="/library" element={isAuthenticated ? <BookPage darkMode={darkMode} /> : <login />} />
-          <Route path="/library/:id" element={isAuthenticated ? <BookDetails addToBookshelf={addToBookshelf} darkMode={darkMode} /> : <login />} />
-          <Route path="/UserProfile" element={isAuthenticated ? <UserProfile user={user} darkMode={darkMode} /> : <login />} />
+          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/about" element={<About darkMode={darkMode} />} />
+          <Route path="/library" element={isAuthenticated ? <BookPage darkMode={darkMode} /> : <Login />} />
+          <Route path="/library/:id" element={isAuthenticated ? <BookDetails addToBookshelf={addToBookshelf} darkMode={darkMode} /> : <Login />} />
+          <Route path="/UserProfile" element={isAuthenticated ? <UserProfile user={user} darkMode={darkMode} /> : <Login />} />
           <Route path="/" element={<Home darkMode={darkMode} />} />
-          <Route path="/chatapp" element={isAuthenticated ? <BookChat darkMode={darkMode} /> : <login />} />
+          <Route path="/chatapp" element={isAuthenticated ? <BookChat darkMode={darkMode} /> : <Login />} />
           <Route
             path="/bookshelf"
             element={isAuthenticated ? (
@@ -245,12 +245,12 @@ export default function App() {
                 onMoveToReading={moveToReading}
                 darkMode={darkMode}
               />
-            ) : <login />}
+            ) : <Login />}
           />
         </Routes>
       </div>
 
-      <footer darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Footer darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
     </Router>
   );
 }
