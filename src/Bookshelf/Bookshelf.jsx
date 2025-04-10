@@ -1,7 +1,7 @@
 import React from 'react';
 import './Bookshelf.css';
 
-const Bookshelf = ({ completedBooks, currentlyReading, wishlist, onMoveToCompleted, onMoveToReading }) => {
+const bookshelf = ({ completedBooks, currentlyReading, wishlist, onMoveToCompleted, onMoveToReading }) => {
   
   const BookCard = ({ book, moveFunction, buttonLabel }) => (
     <div className="book-cardson">
@@ -51,4 +51,4 @@ const Bookshelf = ({ completedBooks, currentlyReading, wishlist, onMoveToComplet
   );
 };
 
-export default Bookshelf;
+export default bookshelf;

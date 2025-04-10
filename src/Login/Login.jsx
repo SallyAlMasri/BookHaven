@@ -7,7 +7,7 @@ import {  signInWithPopup } from "firebase/auth";
 import { getDoc, doc, setDoc } from "firebase/firestore";
 
 
-export default function Login() {
+export default function login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
