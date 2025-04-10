@@ -1,0 +1,26 @@
+.star-rating {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  .star-rating .star {
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .star-rating .star.full {
+    color: gold;
+  }
+  
+  .star-rating .star.half {
+    color: orange;
+  }
+  
+  .star-rating .star.empty {
+    color: #ddd;
+  }
+  
+  .star-rating .star:hover {
+    color: #ffcc00; 
+  }
+  

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Great+Vibes&family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.bookshelf {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px;
+    position: relative;
+    font-size: 35px;
+}
+.bookshelf h2 {
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: #F4B6C2;
+    font-weight: italic;
+    font-family: "Playwrite IT Moderna", cursive;
+    text-align: center;
+}
+.bookshelf .news{
+    color: #F4B6C2;
+    font-weight: italic;
+    font-family: "Playwrite IT Moderna", cursive;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.book-listnm {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    gap: 20px;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom:    10;
+    
+}
+
+.book-cardson {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    background: #F4B6C2;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px #F4B6C2;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    flex: 0 0 auto;
+}
+
+.book-cardson:hover {
+    transform: scale(1.05);
+}
+.book-cardson img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+.book-cardson h3, 
+.book-cardson p {
+    margin: 5px 0;
+}
+
+.book-action-btn {
+    background-color: black;
+    color: #F4B6C2;
+    border-radius: 14px;
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    margin-top: 5px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.book-action-btn:hover {
+    background-color: #333;
+}
+
+.shelf-divider {
+    width: 100%;
+    height: 20px;
+    background: #F4B6C2;
+    margin: 40px 0;
+    border-radius: 30px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {  
+    .book-listnm {
+        flex-wrap: wrap; 
+        gap: 50px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {  
+    .bookshelf {
+        font-size: 25px;
+        
+    }
+    .bookshelf h2 {
+        font-size: 30px;
+    }
+    .book-listnm {
+        flex-wrap: wrap;
+        justify-content: center;
+      
+    }
+    .book-cardson {
+        width: 90%;
+    }
+    .book-action-btn {
+        font-size: 0.8rem;
+    }
+}

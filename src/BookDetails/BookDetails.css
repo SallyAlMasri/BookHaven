@@ -1,0 +1,124 @@
+
+body {
+    background-color: #f8f3ed ;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  .book-details {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .book-details .book-cover {
+    width: 200px;
+    height: auto;
+  }
+  
+  .book-details .buttons {
+    margin: 20px 0;
+  }
+  
+  .book-details .btn-completed,
+  .book-details .btn-reading,
+  .book-details .btn-wishlist,
+  .book-details .btn-submit-review,
+  .book-details .btn-read-now {
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .book-details .ratings-review {
+    margin-top: 20px;
+  }
+  
+  .book-details .comment-box {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+  }
+  
+  .book-details .img-con {
+    height: 670px;
+    width: 350px;
+    background-color: #F4B6C2;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+  
+  .book-details .book-cover {
+    width: 320px;
+    height: 430px;
+    margin-top: 100px;
+    margin-left: 150px;
+  }
+  
+  .book-details .element-detail {
+    margin-left: 150px;
+    margin-top: 80px;
+  }
+  
+  .book-details .h1-detail {
+    color: black;
+    font-family: poppins;
+    font-size: 40px;
+  }
+  
+  .book-details .h2-detail {
+    color: rgb(73, 72, 72);
+    font-family: poppins;
+  }
+  
+  .book-details .btn-read-now {
+    background-color: black;
+    color: #F4B6C2;
+    height: 35px;
+    width: 100px;
+    border-radius: 14px;
+    margin-left: 150px;
+    margin-top: 15px;
+  }
+  
+  .book-details .btn-book {
+    background-color: black;
+    color: #F4B6C2;
+    border-radius: 14px;
+  }
+  .comment-box {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 16px;
+    font-size: 16px;
+    line-height: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8d1e2;
+    color: #333;
+    transition: all 0.3s ease;
+    resize: vertical;
+    box-sizing: border-box; 
+    
+    
+  }
+  
+  .comment-box:focus {
+    border-color: #007bff;
+    background-color: #92868d;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  .comment-box::placeholder {
+    color: #585757;
+    font-style: italic;
+  }
+  .btn-submit-review{
+    display: block;
+    background-color: black;
+    color: #F4B6C2;
+    border-radius: 14px;
+    transform: translateX(370px);
+  
+  }
+  

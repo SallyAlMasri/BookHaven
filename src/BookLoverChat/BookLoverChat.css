@@ -1,0 +1,121 @@
+/* Gradient background for the whole chat container */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.chat-container {
+  background: linear-gradient(to right, #f8f3ed, #e9b4bc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  color: #333;
+}
+
+/* Chat box style with larger size */
+.chat-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  max-width: 800px; /* Increased width */
+  height: 500px; /* Increased height */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title with colorful effect */
+.chat-title {
+  text-align: center;
+  font-size: 2.5em;
+  color: #F4B6C2; /* Bright pink */
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-title img {
+  width: 50px; /* Avatar size reduced to a logo size */
+  margin-left: 10px; /* Reduced space between the logo and text */
+}
+
+/* Messages display section */
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  padding-right: 10px;
+}
+
+/* Individual message bubbles */
+.chat-bubble {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+.chat-bubble-user {
+  background-color: #FFB6C1; /* Baby pink for the user's messages */
+  text-align: right;
+  margin-left: 20px;
+}
+
+.chat-bubble-other {
+  background-color: #ADD8E6; /* Baby blue for others' messages */
+  text-align: left;
+  margin-right: 20px;
+}
+
+/* Avatar adjustments inside the chat bubble */
+.avatar {
+  width: 40px; /* Reduced avatar size */
+  height: 40px; /* Maintain aspect ratio */
+  border-radius: 50%; /* Circular avatar */
+  margin-right: 10px; /* Space between the avatar and the message */
+  display: inline-block;
+}
+
+/* Input and button styling */
+.chat-input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-message-input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid #F4B6C2; /* Pink border */
+  font-size: 1.2em;
+  outline: none;
+  background-color: #fefefe;
+}
+
+.chat-message-input:focus {
+  border-color: #ADD8E6; /* Baby blue on focus */
+}
+
+.chat-send-button {
+  background: linear-gradient(135deg, #F4B6C2, #f8f3ed); /* Gradient button */
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.chat-send-button:hover {
+  background: linear-gradient(135deg, #f8f3ed, #F4B6C2); /* Reverse gradient on hover */
+}
